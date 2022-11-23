@@ -2,27 +2,27 @@
 
 <body>
     <p>Projeto criado com intuito de apromorar capacidades de desenvolvimento WEB.</p>
-    <p>Visite em: <a href="https://iagorhuda.dev">iagorhuda.dev</a></p>
+    <p>Visite em: <a href="https://iagorhuda.dev" target="_blank">iagorhuda.dev</a></p>
     <p>Tecnologias utilizadas:</p>
 <ul>
     <li>
         <i>
-        <p><i class="bi bi-filetype-py"></i> Python</p>
+        <p>Python</p>
     </li>
     <li>
-        <p><i class="bi bi-filetype-py"></i> Flask</p>
+        <p>Flask</p>
     </li>
     <li>
-        <p><i class="bi bi-bootstrap"></i> Bootstrap</p>
+        <p>Bootstrap</p>
     </li>
     <li>
-        <p><i class="bi bi-filetype-js"></i> JavaScript</p>
+        <p>JavaScript</p>
     </li>
     <li>
-        <p><i class="bi bi-filetype-css"></i> CSS</p>
+        <p>CSS</p>
     </li>
     <li>
-        <p><i class="bi bi-filetype-html"></i> HTML</p>
+        <p>HTML</p>
     </li>
 </ul>
 </body>
