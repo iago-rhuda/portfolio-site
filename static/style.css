@@ -27,7 +27,7 @@ body {
   font-family: Montserrat, Arial;
   width: 100%;
   height: 100%;
-  background:-webkit-gradient(linear, left top, right top, from(#CCCCCC), to(#000000));
+  background:-webkit-gradient(linear, left top, right top, from(#101010), to(#CCCCCC));
 }
 .vizualizacao{
   height: 100vh;
@@ -42,7 +42,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  background: rgb(16, 16, 16);
+  background: #101010;
   overflow-y: auto;
   width: 300px;
   transition: all ease-in-out 0.5s;
@@ -133,7 +133,11 @@ section#inicio h2{
   margin-right: 6rem;
 }
 section#inicio span#subtitle{
-  margin-left: 1rem;
+  margin-right: 2.5rem;
+  font-size: 1.25rem;
+}
+section#inicio span#subtitle2{
+  margin-right: 6.25rem;
   font-size: 1.25rem;
 }
 /* fim das configurações da section "inicio" */
@@ -258,7 +262,7 @@ i.menu-mobile{
   left: 0;
 }
   /* media querie para menu mobile */
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px){
     #header {
       left: -300px;
     }
@@ -269,11 +273,52 @@ i.menu-mobile{
       font-size: 3.5rem ;
     }
     section#inicio span#subtitle{
-      margin-right: 0;
-      font-size: 1rem;
+      margin-right: 2.5rem;
+      font-size: 1.25rem;
+    }
+    section#inicio span#subtitle2{
+      margin-right: 6.25rem;
+      font-size: 1.25rem;
     }
     #main{
         margin-left: 0;
+    }
+  }
+  @media (max-width: 450px){
+    section#header {
+      left: -300px;
+    }
+    i.menu-mobile{
+      display: flex;
+    }
+    section#inicio h2{
+      font-size: 3.5rem ;
+    }
+    section#inicio span#subtitle{
+      margin-right: 2.5rem;
+      font-size: 1.25rem;
+    }
+    section#inicio span#subtitle2{
+      margin-right: 6.25rem;
+      font-size: 1.25rem;
+    }
+    section#main{
+        margin-left: 0;
+    }
+    section#habilidades{
+      height: 100vh;
+      padding-top: 25rem;
+    }
+    section#curriculo{
+        height: 100vh;
+        padding-top: 35rem;
+    }
+    section#portfolio{
+        height: 100vh;
+        padding-top: 35rem;
+    }
+    section#contato{
+        padding-top: 400rem;
     }
   }
   /* fim da media querie para menu mobile */
@@ -331,7 +376,7 @@ i.menu-mobile{
       position: static;
       width: auto;
       padding: 20px 15px;
-      background-color: -webkit-gradient(linear, left top, right top, from(#CCCCCC), to(#000000));;
+      background-color: -webkit-gradient(linear, left top, right top, from(#101010), to(#CCCCCC));
     }
   }
   /* fim da media querie para footer mobile */
