@@ -1,7 +1,7 @@
 {
     "engines": {
         "node": "18.12.1",
-        "flask": "2.0.3"
+        "Flask": "2.2.2"
     },
     "scripts": {
         "start": "node app.py"
