@@ -3,6 +3,6 @@
         "node": "18.12.1"
     },
     "scripts": {
-        "start": "node script.js"
+        "start": "node app.py"
       }
 }
