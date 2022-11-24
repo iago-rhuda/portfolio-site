@@ -1,5 +1,10 @@
 {
-    "name": "Site Portfólio - Iago Rhudá",
+    "name": "(SitePortfólio-IagoRhudá)",
+    "version": "1.0.0",
+    "main": "app.py",
+    "scripts": {
+        "start": "python ./app.py"
+    },
     "description": "Site Portfólio pessoal",
     "keywords": ["portfolio", "website", "Flask", "Bootstrap", "Python", "CSS", "HTML", "JS"],
     "author": "Iago Rhudá Ramos <iagorhudaramos@gmail.com> (https://iagorhuda.dev)",
@@ -18,7 +23,9 @@
         "Flask": "2.2.2"
       },
     "devDependencies": {},
-    "scripts": {
-        "start": "python app.py"
+    "engines": {
+        "node": "18.12.2",
+        "npm": ">= 3.0.0",
+        "Flask": "2.2.2"
     }
 }
