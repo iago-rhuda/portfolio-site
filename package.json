@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "app.py",
     "scripts": {
-        "start": "python ./app.py"
+        "start": "python /app.py"
     },
     "description": "Site Portfólio pessoal",
     "keywords": ["portfolio", "website", "Flask", "Bootstrap", "Python", "CSS", "HTML", "JS"],
