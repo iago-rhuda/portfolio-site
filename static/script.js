@@ -58,3 +58,6 @@ function idade() {
   }
   return quantos_anos < 0 ? 0 : quantos_anos;
 }
+var mostrar_idade = idade();
+console.log(mostrar_idade);
+document.getElementById("idade").innerHTML = mostrar_idade + " anos";
