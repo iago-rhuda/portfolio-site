@@ -1,5 +1,5 @@
 {
-    "name": "(SitePortfólio-IagoRhudá)",
+    "name": "site-portfolio-iago-rhuda",
     "version": "1.0.0",
     "main": "src/app.py",
     "scripts": {
@@ -19,8 +19,9 @@
     "homepage": "url",
     "dependencies": {
         "package": "^0.1.1",
-        "node": "18.12.1",
-        "Flask": "2.2.2"
+        "node.js": "18.12.1",
+        "node": "1.1",
+        "flask": "2.2.2"
       },
     "devDependencies": {},
     "engines": {
