@@ -6,13 +6,6 @@
     <p>Tecnologias utilizadas:</p>
 <ul>
     <li>
-        <i>
-        <p>Python</p>
-    </li>
-    <li>
-        <p>Flask</p>
-    </li>
-    <li>
         <p>Bootstrap</p>
     </li>
     <li>
