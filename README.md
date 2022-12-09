@@ -22,7 +22,7 @@
 
 <h2>English</h2>
 
-# Site Portfólio - Iago Rhudá
+# Portfolio Site - Iago Rhudá
 
 <body>
     <p>Project created with the aim of improving WEB development capabilities.</p>
