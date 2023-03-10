@@ -16,7 +16,7 @@ Grandes Telas: acima de 1200px
 }
 *::-webkit-scrollbar-track{
   width: 12px;
-  background-color: #fff;
+  background-color: #CCCCCC;
 }
 *::-webkit-scrollbar-thumb{
   background-color: #808080;
@@ -157,7 +157,7 @@ section#inicio span#subtitle2{
 }
 /* configurações da section "habilidades" */
 /* configurações da section "currículo" */
-section#curriculo h5{
+section#formacoes h5{
   color: #000;
 }
 .cv .cv-title{
@@ -309,7 +309,7 @@ i.menu-mobile{
       height: 100vh;
       padding-top: 25rem;
     }
-    section#curriculo{
+    section#formacoes{
         height: 100vh;
         padding-top: 35rem;
     }
@@ -381,3 +381,31 @@ i.menu-mobile{
   }
   /* fim da media querie para footer mobile */
 /* fim das configurações do footer */
+
+/* estilização do botão de download do currículo */
+.botao-download{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid#fff;
+  
+}
+.botao-download:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid#000;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+/* fim da estilização do botão de download do currículo */
