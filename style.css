@@ -211,18 +211,16 @@ section#portfolio{
   height: 100%;
   width: 100%;
 }
+
+
+
+
   /* configurações do carrossel */
-  .carousel-control-prev:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .carousel-control-next:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .carousel-indicators{
-    margin-bottom: -35px;
-    cursor: pointer;
-  }
+  
   /* fim das configurações do carrossel */
+
+
+
 /* fim das configurações da saction "portfolio" */
 /* configurações da section "contato" */
 .botao{
@@ -345,6 +343,7 @@ i.menu-mobile{
   transform: translate3d(0 ,0 ,0);
 }
   /* media querie para animação/carrossel mobile */
+  /*
   @media screen and (max-width: 1860px){
     .carousel-control-prev{
       margin-left: 0;
@@ -356,6 +355,7 @@ i.menu-mobile{
       transform: translate3d(0, 100%, 0);
     }
   }
+  */
   /* fim das configurações de animação */
 /* configurações do footer */
 #footer{
@@ -409,3 +409,16 @@ i.menu-mobile{
   transition-duration: 0.5s;
 }
 /* fim da estilização do botão de download do currículo */
+
+.carousel-indicators{
+  margin-bottom: -35px;
+}
+#button-indicator{
+  background-color: #fff;
+}
+.carousel-control-prev:hover{
+  background-color: rgba( 255, 255, 255, 0.5);
+}
+.carousel-control-next:hover{
+  background-color: rgba( 255, 255, 255, 0.5);
+}

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type='icon' href="img/rocket-takeoff.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    
     <title>Iago Rhudá</title>
 </head>
 
@@ -282,24 +285,28 @@
         </section>
 
         <hr class="w-50 me-auto ms-auto">
+        
 
-        <section id="portfolio" class="mt-5">
+        <section id="portfolio" class="section-bg mt-5">
+            <div class="container pb-5 pt-5" data-anime="left">
+                <h2 class="pb-4 text-white">Portfólio</h2>
 
-            <div class="container pb-5 pt-5">
-
-                <h2 class="pb-4 text-white" data-anime="left">Portfólio</h2>
-
-                <div id="carouselPortfolio" class="carousel carousel slide" data-bs-ride="carousel" data-anime="up">
+                <!--indicadores do carrossel-->
+                <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
+                        <button id="button-indicator" type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
+                        <button id="button-indicator" type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
 
+                    <!--carrossel-->
+                    <div class="carousel-inner">
+                        <!--primeira página do carrossel-->
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <!--primeiro card - primeira página-->
                                 <div class="col">
                                     <div class="card">
                                         <img src="img/login.jpeg" class="card-img-top"
@@ -330,6 +337,7 @@
                                     </div>
                                 </div>
 
+                                <!--segundo card - primeira página-->
                                 <div class="col">
                                     <div class="card">
                                         <img src="img/site portfolio.jpg" class="card-img-top img-fluid w-100"
@@ -387,15 +395,14 @@
                                     </div>
                                 </div>
 
-                                
+                                <!--terceiro card - primeira página-->
                                 <div class="col">
                                     <div class="card">
                                         <img src="img/TicTacToe.png" class="card-img-top img-fluid w-100"
-                                            alt="print do blog">
+                                            alt="Imagem do Jogo">
                                         <div class="card-body">
                                             <h5 class="card-title">Jogo da Velha c/ I.A.</h5>
                                             <p class="card-text">Projeto criado em Python utilizando o método MiniMax para a I.A..</p>
-                                            
                                             <div class="row">
                                                 <div class="md-12">
                                                     <p>
@@ -408,7 +415,6 @@
                                                     <br>
                                                 </div>
                                             </div>
-                                            
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/iago-rhuda/tic-tac-toe-artificial-intelligence" target='_blank'
                                                     class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
@@ -416,37 +422,44 @@
                                         </div>
                                     </div>
                                 </div>
-                            
-                                
-                            </div>
 
+                            </div>
                         </div>
 
-                        <!--
+                        <!--segunda página do carrossel-->
                         <div class="carousel-item" data-bs-interval="2000">
+
                             <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                                <!--primeiro card - segunda página-->
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="{{url_for('static', filename='img/foto4.jpg')}}" class="card-img-top img-fluid w-100"
-                                            alt="print do blog">
+                                        <img src="img/coming-soon.png" class="card-img-top img-fluid w-100"
+                                            alt="Imagem da Interface Gráfica">
                                         <div class="card-body">
-                                            <h5 class="card-title">Blue Music</h5>
-                                            <p class="card-text">Projeto fullstack criado com SQLite, Flask, HTML, CSS e
-                                                JavaScript,
-                                                deploy realizado no Heroku</p>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/codethi/BlueMusicV2" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                <a href="https://appbluemusic.herokuapp.com/" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                            <h5 class="card-title">Checagem Corona Vírus</h5>
+                                            <p class="card-text">Interface Gráfica para análise dos dados do Corona Vírus feito em Python, 
+                                                utilizando a biblioteca TKinter.</p>
+                                            <div class="md-12">
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+                                                      </svg> Python
+                                                </p>
                                             </div>
-
+                                            <div class="d-flex justify-content-center">
+                                                <a href="" target='_blank'
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--segundo card - segunda página-->
+                                <!--
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="{{url_for('static', filename='img/foto4.jpg')}}" class="card-img-top img-fluid w-100"
+                                        <img src="../static/img/timer.png" class="card-img-top img-fluid w-100"
                                             alt="print do blog">
                                         <div class="card-body">
                                             <h5 class="card-title">Timer</h5>
@@ -464,9 +477,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                -->
+
+                                <!--terceiro card - segunda página-->
+                                <!--
                                 <div class="col">
                                     <div class="card h-100">
-                                        <img src="{{url_for('static', filename='img/foto4.jpg')}}" class="card-img-top img-fluid w-100"
+                                        <img src="../static/img/pagina-links.png" class="card-img-top img-fluid w-100"
                                             alt="print do blog">
                                         <div class="card-body">
                                             <h5 class="card-title">Página de Links</h5>
@@ -483,27 +500,28 @@
                                         </div>
                                     </div>
                                 </div>
+                                -->
+
                             </div>
                         </div>
-                        -->
-        
-                    </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
+                    <!--controle do carrossel-->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-
                 </div>
-            </div>
-        
-        </section>
 
+            </div>
+        </section>
+        
         <hr class="w-50 me-auto ms-auto">
 
         <section class="vizualizacao pt-5 pb-5" id="contato">
@@ -555,7 +573,7 @@
         </div>
     </footer>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
